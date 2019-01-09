@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  rabbitmqadmin:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: softonic/rabbitmqadmin:${VERSION:-latest}
